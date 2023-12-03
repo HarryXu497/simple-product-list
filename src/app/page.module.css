@@ -1,5 +1,10 @@
-.searchBar {
+.productList {
 	margin: 0 auto;
 
 	width: clamp(16rem, 40%, 50rem);
+
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem;
 }

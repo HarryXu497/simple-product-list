@@ -1,9 +1,22 @@
+"use client"
+
+import { useSearchParams } from "next/navigation";
 import styles from "./SearchBar.module.css";
 
 export default function SearchBar() {
+	const searchParams = useSearchParams();
+
+	const value = searchParams.get("q") || "";
+
 	return (
-		<form method="GET">
-			<input name="q" type="text" placeholder="Search for products" className={styles.searchBar}/>
+		<form method="GET" className={styles.form}>
+			<input
+				name="q"
+				defaultValue={value}
+				type="text"
+				placeholder="Search for products"
+				className={styles.searchBar}
+			/>
 		</form>
 	)
 }

@@ -1,0 +1,21 @@
+.productDetail {
+	padding: 0.75rem;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 2px;
+	background-color: white;
+
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 0.25rem;
+}
+
+.productDetail h2 {
+	font-size: 1.5rem;
+}
+
+.productDetail h3 {
+	font-size: 1rem;
+	color: hsl(0, 0%, 20%);
+}

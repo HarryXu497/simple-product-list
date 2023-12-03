@@ -1,13 +1,15 @@
 import SearchBar from "@/lib/components/SearchBar/SearchBar";
 import styles from "./page.module.css";
-import { PageProps } from "../../.next/types/app/page";
+import ProductList from '../lib/components/ProductList/ProductList';
 import getProducts from "@/lib/database/getProducts";
 
-export default function Page({ searchParams }: { searchParams: { q: string }}) {
-	const data = await getProducts(searchParams.q);
+export default async function Page({ searchParams: { q } }: { searchParams: { q: string }}) {
+	const products = await getProducts(q);
+
 	return (
-		<div className={styles.searchBar}>
+		<main className={styles.productList}>
 			<SearchBar/>
-		</div>
+			<ProductList products={products}/>
+		</main>
 	)
 }
