@@ -28,6 +28,8 @@ export default async function getProducts(query: string) {
 	} catch (error) {
 		return [];
 	}
+
+	client.release()
    
 	return products;
 }
