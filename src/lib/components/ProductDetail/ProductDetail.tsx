@@ -12,7 +12,7 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 		<div className={styles.productDetail}>
 			<div className="text">
 				<h2>{product.name}</h2>
-				<h3>{product.price}</h3>
+				<h3>${product.price}</h3>
 			</div>
 			<div className="image">
 				<Image src={productImage} alt={product.name} width={100} height={100} priority={true}/>
