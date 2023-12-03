@@ -7,7 +7,7 @@ export default async function getProducts(query: string) {
 	let products: Product[];
   
 	const queryString = query ?
-		`SELECT id, name, price FROM products WHERE name ILIKE '${query}` :
+		`SELECT id, name, price FROM products WHERE name ILIKE '${query}%';` :
 		`SELECT id, name, price FROM products;`;
 	
 	try {
