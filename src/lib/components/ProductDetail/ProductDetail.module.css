@@ -4,7 +4,6 @@
 	border-radius: 2px;
 	background-color: white;
 
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -12,7 +11,7 @@
 }
 
 .productDetail h2 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .productDetail h3 {

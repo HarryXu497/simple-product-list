@@ -1,7 +1,7 @@
 .productList {
 	margin: 0 auto;
 
-	width: clamp(16rem, 50%, 56rem);
+	width: clamp(18rem, 50%, 56rem);
 
 	display: flex;
 	flex-direction: column;
