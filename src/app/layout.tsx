@@ -6,11 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Grigorov\'s Tie Emporium',
-	description: `
-		Ties! Ties! Ties!
-		We have it all here at Grigorov\'s Tie Emporium™.
-		Whichever tie you need, we have it!
-	`,
+	description: "Ties! Ties! Ties!\nWe have it all here at Grigorov\'s Tie Emporium™.\nWhichever tie you need, we have it!",
 }
 
 export default function RootLayout({
