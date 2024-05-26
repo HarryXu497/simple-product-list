@@ -14,7 +14,7 @@ export default function SearchBar() {
 				name="q"
 				defaultValue={value}
 				type="text"
-				placeholder="Search for products"
+				placeholder="Search for ties!"
 				className={styles.searchBar}
 			/>
 		</form>
